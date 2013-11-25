@@ -1,0 +1,29 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  database: active_gallery_dev
+  reconnect: true
+  pool: 5
+  host: localhost
+  username: active_gallery
+  password: password
+
+test:
+  adapter: mysql2
+  encoding: utf8
+  database: active_gallery_test
+  reconnect: true
+  pool: 5
+  host: localhost
+  username: active_gallery
+  password: password
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  database: active_gallery_prod
+  reconnect: true
+  pool: 5
+  host: localhost
+  username: active_gallery
+  password: password
