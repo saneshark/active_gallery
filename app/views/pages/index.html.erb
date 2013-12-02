@@ -1,0 +1,59 @@
+<h1>Listing pages</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Seo</th>
+      <th>Body</th>
+      <th>View template</th>
+      <th>Layout template</th>
+      <th>Slug</th>
+      <th>Link url</th>
+      <th>Path</th>
+      <th>Visible</th>
+      <th>Deleted</th>
+      <th>Deletable</th>
+      <th>Draft</th>
+      <th>Position</th>
+      <th>Parent</th>
+      <th>Lft</th>
+      <th>Rgt</th>
+      <th>Depth</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pages.each do |page| %>
+      <tr>
+        <td><%= page.title %></td>
+        <td><%= page.seo %></td>
+        <td><%= page.body %></td>
+        <td><%= page.view_template %></td>
+        <td><%= page.layout_template %></td>
+        <td><%= page.slug %></td>
+        <td><%= page.link_url %></td>
+        <td><%= page.path %></td>
+        <td><%= page.visible %></td>
+        <td><%= page.deleted %></td>
+        <td><%= page.deletable %></td>
+        <td><%= page.draft %></td>
+        <td><%= page.position %></td>
+        <td><%= page.parent_id %></td>
+        <td><%= page.lft %></td>
+        <td><%= page.rgt %></td>
+        <td><%= page.depth %></td>
+        <td><%= link_to 'Show', page %></td>
+        <td><%= link_to 'Edit', edit_page_path(page) %></td>
+        <td><%= link_to 'Destroy', page, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Page', new_page_path %>

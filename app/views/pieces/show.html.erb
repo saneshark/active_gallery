@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Gallery:</strong>
+  <%= @piece.gallery_id %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @piece.type %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @piece.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @piece.description %>
+</p>
+
+<p>
+  <strong>Dimensions:</strong>
+  <%= @piece.dimensions %>
+</p>
+
+<p>
+  <strong>Completed date:</strong>
+  <%= @piece.completed_date %>
+</p>
+
+<p>
+  <strong>Medium:</strong>
+  <%= @piece.medium %>
+</p>
+
+<p>
+  <strong>Image file:</strong>
+  <%= @piece.image_file %>
+</p>
+
+<%= link_to 'Edit', edit_piece_path(@piece) %> |
+<%= link_to 'Back', pieces_path %>

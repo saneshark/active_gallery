@@ -1,0 +1,89 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @page.title %>
+</p>
+
+<p>
+  <strong>Seo:</strong>
+  <%= @page.seo %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @page.body %>
+</p>
+
+<p>
+  <strong>View template:</strong>
+  <%= @page.view_template %>
+</p>
+
+<p>
+  <strong>Layout template:</strong>
+  <%= @page.layout_template %>
+</p>
+
+<p>
+  <strong>Slug:</strong>
+  <%= @page.slug %>
+</p>
+
+<p>
+  <strong>Link url:</strong>
+  <%= @page.link_url %>
+</p>
+
+<p>
+  <strong>Path:</strong>
+  <%= @page.path %>
+</p>
+
+<p>
+  <strong>Visible:</strong>
+  <%= @page.visible %>
+</p>
+
+<p>
+  <strong>Deleted:</strong>
+  <%= @page.deleted %>
+</p>
+
+<p>
+  <strong>Deletable:</strong>
+  <%= @page.deletable %>
+</p>
+
+<p>
+  <strong>Draft:</strong>
+  <%= @page.draft %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @page.position %>
+</p>
+
+<p>
+  <strong>Parent:</strong>
+  <%= @page.parent_id %>
+</p>
+
+<p>
+  <strong>Lft:</strong>
+  <%= @page.lft %>
+</p>
+
+<p>
+  <strong>Rgt:</strong>
+  <%= @page.rgt %>
+</p>
+
+<p>
+  <strong>Depth:</strong>
+  <%= @page.depth %>
+</p>
+
+<%= link_to 'Edit', edit_page_path(@page) %> |
+<%= link_to 'Back', pages_path %>

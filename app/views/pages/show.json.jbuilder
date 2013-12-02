@@ -1,0 +1,1 @@
+json.extract! @page, :title, :seo, :body, :view_template, :layout_template, :slug, :link_url, :path, :visible, :deleted, :deletable, :draft, :position, :parent_id, :lft, :rgt, :depth, :created_at, :updated_at
